@@ -18,6 +18,10 @@ th {
 
 
 // Baseline styles
+// .table 样式的作用主要有三个
+//   1.增加单元格的内边距
+//   2.在thead的底部设置一条2像素的粗线
+//   3.在每行记录的顶部都有1条1个像素的粗线
 
 .table {
   width: 100%;
@@ -37,7 +41,7 @@ th {
       }
     }
   }
-  // Bottom align for column headings
+  // 在thead底部有一个两像素宽的粗线
   > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid @table-border-color;
@@ -54,6 +58,7 @@ th {
     }
   }
   // Account for multiple tbody instances
+  // 如果表格里有两个 tbody ，两者之间也会有1条2像素的粗线
   > tbody + tbody {
     border-top: 2px solid @table-border-color;
   }
@@ -66,6 +71,7 @@ th {
 
 
 // Condensed table w/ half padding
+//紧凑型表格，表现的要比普通表格更为紧凑一些，原理是通过减少单元格的 padding 实现
 
 .table-condensed {
   > thead,
@@ -84,6 +90,7 @@ th {
 // Bordered version
 //
 // Add borders all around the table and between all the columns.
+// 为所有单元格提供 1px 的边框
 
 .table-bordered {
   border: 1px solid @table-border-color;
@@ -109,6 +116,8 @@ th {
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+// 背景条纹表格,在现有 .table 样式的基础上添加隔行加背景色的设置
+// 注： 该样式不支持IE8
 
 .table-striped {
   > tbody > tr:nth-of-type(odd) {
@@ -120,6 +129,7 @@ th {
 // Hover effect
 //
 // Placed here since it has to come after the potential zebra striping
+// 鼠标悬停时添加背景颜色
 
 .table-hover {
   > tbody > tr:hover {
@@ -167,6 +177,10 @@ table {
 // Wrap your tables in `.table-responsive` and we'll make them mobile friendly
 // by enabling horizontal scrolling. Only applies <768px. Everything above that
 // will display normally.
+//
+// 响应式表格
+// 在小屏幕设备上水平滚动，当屏幕大于 xs-max 时，滚动条消失    
+// 减少 margin-bottom 
 
 .table-responsive {
   overflow-x: auto;
@@ -180,6 +194,7 @@ table {
     border: 1px solid @table-border-color;
 
     // Tighten up spacing
+    // 减少 margin-bottom 以缩紧与滚动条的距离
     > .table {
       margin-bottom: 0;
 
@@ -197,6 +212,7 @@ table {
     }
 
     // Special overrides for the bordered tables
+    // 在响应式样式下，针对 .table-bordered 样式又进行了去边框设置
     > .table-bordered {
       border: 0;
 
