@@ -2488,6 +2488,9 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+/**
+  表单部分
+*/
 fieldset {
   min-width: 0;
   padding: 0;
@@ -2564,6 +2567,7 @@ output {
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+/* 重写outline样式 */
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
@@ -2580,6 +2584,7 @@ output {
 .form-control::-webkit-input-placeholder {
   color: #999;
 }
+/* 这段代码用于修改 select 样式 */
 .form-control::-ms-expand {
   background-color: transparent;
   border: 0;

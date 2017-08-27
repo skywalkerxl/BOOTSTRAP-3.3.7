@@ -1,5 +1,6 @@
 //
 // Forms
+// 表单
 // --------------------------------------------------
 
 
@@ -386,6 +387,8 @@ input[type="checkbox"] {
 // Form control feedback states
 //
 // Apply contextual and semantic states to individual form controls.
+// 父容器上的 has-feedback 样式用于设置定位方式
+// 小图标元素上的form-control-feedback 样式用于设置图标的显示大小
 
 .has-feedback {
   // Enable absolute positioning
@@ -397,6 +400,7 @@ input[type="checkbox"] {
   }
 }
 // Feedback icon (requires .glyphicon classes)
+// 用于设置图标的显示大小
 .form-control-feedback {
   position: absolute;
   top: 0;
@@ -470,7 +474,11 @@ input[type="checkbox"] {
 // default HTML form controls and our custom form controls (e.g., input groups).
 //
 // Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
-
+//
+// 内联表单
+//
+// 注意：该部分样式只在宽度大于 screen-sm-min 时起作用
+// 核心代码为 display: inline-block
 .form-inline {
 
   // Kick in the inline
@@ -546,7 +554,9 @@ input[type="checkbox"] {
 //
 // Horizontal forms are built on grid classes and allow you to create forms with
 // labels on the left and inputs on the right.
-
+// 横向表单
+//
+// 横向表单本身并没有做其他特殊的设置，只是改变了 margin 值与 padding 值
 .form-horizontal {
 
   // Consistent vertical alignment of radios and checkboxes
