@@ -1336,6 +1336,7 @@ mark,
 .text-muted {
   color: #777;
 }
+/* 主要蓝 */
 .text-primary {
   color: #337ab7;
 }
@@ -1343,6 +1344,7 @@ a.text-primary:hover,
 a.text-primary:focus {
   color: #286090;
 }
+/* 成功绿 */
 .text-success {
   color: #3c763d;
 }
@@ -1350,6 +1352,7 @@ a.text-success:hover,
 a.text-success:focus {
   color: #2b542c;
 }
+/* 信息蓝 */
 .text-info {
   color: #31708f;
 }
@@ -1357,6 +1360,7 @@ a.text-info:hover,
 a.text-info:focus {
   color: #245269;
 }
+/* 警告黄 */
 .text-warning {
   color: #8a6d3b;
 }
@@ -1364,6 +1368,7 @@ a.text-warning:hover,
 a.text-warning:focus {
   color: #66512c;
 }
+/* 危险红 */
 .text-danger {
   color: #a94442;
 }
