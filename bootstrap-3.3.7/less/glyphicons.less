@@ -6,16 +6,22 @@
 // inline element with the appropriate classes, like so:
 //
 // <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+// glyphicons.com 是一家提供商业icons图片集的网站，上述200个icon免费授权给了Bootstrap框架，所以大家可以免费使用
 
 // Import the fonts
+// 新版的字体图标使用了CSS3中的字体图标功能，与之前老版的图标相比有了显著的改善
+// 像是可以方法缩小字体，改变字体颜色等。
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('@{icon-font-path}@{icon-font-name}.eot');
-  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'),
-       url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'),
+  src: url('@{icon-font-path}@{icon-font-name}.eot');  // IE9 兼容模式
+  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'), // IE6 ~ IE8
+       url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'), // 现代浏览器
        url('@{icon-font-path}@{icon-font-name}.woff') format('woff'),
-       url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'),
-       url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+       // woff 字体是Web字体中的最佳格式
+       url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'), // Safari Android IOS
+       // ttf 字体是Windows和mac中最常用的字体
+       url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg'); // 旧版IOS
+       // svg 字体是基于SVG字体渲染的一种格式
 }
 
 // Catchall baseclass
@@ -32,6 +38,23 @@
 }
 
 // Individual icons
+/*
+  在这里我们可以发现所有的icon样式都是利用 "content:'\e001'" 的形式设置的
+  如果不利用before特性，则需要在e001前面加上unicode前缀&#x
+
+  那么，这是为什么呢？
+
+  content内的字符默认是保存在 Unicode Private Use Area 中的，即 Unicode 专用区
+  这也就是保留给大家存放自定义字符的区域，可以简写为PUA
+  如果要想在HTML里像普通字符一样显示他们,则需要加前缀 &#x,
+  例如下面的两个span
+
+  <span class="glyphicon glyphicon-glass"></span>
+  <span class="glyphicon">&#xe001</span>
+
+  显示的效果是完全一样的
+
+*/
 .glyphicon-asterisk               { &:before { content: "\002a"; } }
 .glyphicon-plus                   { &:before { content: "\002b"; } }
 .glyphicon-euro,
