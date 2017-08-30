@@ -1,5 +1,6 @@
 //
 // Dropdown menus
+// 下拉菜单样式
 // --------------------------------------------------
 
 
@@ -17,6 +18,7 @@
 }
 
 // The dropdown wrapper (div)
+// 父级采用相对定位
 .dropup,
 .dropdown {
   position: relative;
@@ -28,6 +30,7 @@
 }
 
 // The dropdown menu (ul)
+// 子级采用绝对定位，默认隐藏
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -47,6 +50,12 @@
   border-radius: @border-radius-base;
   .box-shadow(0 6px 12px rgba(0,0,0,.175));
   background-clip: padding-box;
+  /*
+    background-clip 为规定背景的绘制区域
+      border-box : 背景被裁剪到边框盒
+      padding-box : 背景被裁剪到内边距框
+      content-box : 背景被裁剪到内容框
+  */
 
   // Aligns the dropdown menu to right
   //
@@ -98,6 +107,7 @@
 // Disabled state
 //
 // Gray out text and ensure the hover/focus state remains gray
+// 设置灰色样式，使得看起来无法点击，真正的效果还是得用js实现。
 
 .dropdown-menu > .disabled > a {
   &,
@@ -118,6 +128,7 @@
 }
 
 // Open state for the dropdown
+// open 样式为菜单设定 "打开" 样式
 .open {
   // Show the menu
   > .dropdown-menu {
@@ -150,6 +161,7 @@
 }
 
 // Dropdown section headers
+// 这是一个类似于菜单标题的功能
 .dropdown-header {
   display: block;
   padding: 3px 20px;

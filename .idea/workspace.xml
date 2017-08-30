@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0be46519-c60c-4ecd-acfb-5825011e05b2" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less" afterPath="$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/dropdowns.less" afterPath="$PROJECT_DIR$/bootstrap-3.3.7/less/dropdowns.less" />
     </list>
     <ignored path="BOOTSTRAP-3.3.7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,18 +47,28 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="24497">
               <caret line="1441" column="21" selection-start-line="1441" selection-start-column="21" selection-end-line="1441" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="glyphicons.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="glyphicons.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dropdowns.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/dropdowns.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -87,6 +97,7 @@
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/less/scaffolding.less" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less" />
+        <option value="$PROJECT_DIR$/bootstrap-3.3.7/less/dropdowns.less" />
       </list>
     </option>
   </component>
@@ -360,11 +371,12 @@
       <workItem from="1503837924111" duration="4866000" />
       <workItem from="1503876603424" duration="9718000" />
       <workItem from="1504094778311" duration="3553000" />
+      <workItem from="1504099889260" duration="1704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20909000" />
+    <option name="totallyTimeSpent" value="22613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1234" height="1028" extended-state="0" />
@@ -407,6 +419,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/forms.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6494">
+          <caret line="382" column="3" selection-start-line="382" selection-start-column="3" selection-end-line="382" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/scaffolding.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="39" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24497">
+          <caret line="1441" column="21" selection-start-line="1441" selection-start-column="21" selection-end-line="1441" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/type.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/forms.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6494">
@@ -604,7 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="24497">
           <caret line="1441" column="21" selection-start-line="1441" selection-start-column="21" selection-end-line="1441" selection-end-column="21" />
           <folding />
         </state>
@@ -613,7 +665,15 @@
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/less/dropdowns.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
           <folding />
         </state>
       </provider>
