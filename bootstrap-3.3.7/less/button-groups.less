@@ -1,5 +1,6 @@
 //
 // Button groups
+// 按钮组。
 // --------------------------------------------------
 
 // Make the div behave like a button
@@ -27,11 +28,12 @@
   .btn + .btn-group,
   .btn-group + .btn,
   .btn-group + .btn-group {
-    margin-left: -1px;
+    margin-left: -1px; // 消除两个按钮之间的 1px 宽度的边距
   }
 }
 
 // Optional: Group multiple button groups together for a toolbar
+// 按钮工具栏
 .btn-toolbar {
   margin-left: -5px; // Offset the first child's margin
   &:extend(.clearfix all);
@@ -196,10 +198,11 @@
 
 
 // Justified button groups
+// 两端对齐排列的按钮组
 // ----------------------
 
 .btn-group-justified {
-  display: table;
+  display: table; // 按照表格布局
   width: 100%;
   table-layout: fixed;
   border-collapse: separate;
