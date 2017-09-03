@@ -3010,6 +3010,12 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+
+/**
+
+  按钮组样式
+
+*/
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -3636,7 +3642,9 @@ tbody.collapse.in {
   border-bottom: 4px dashed;
   border-bottom: 4px solid \9;
 }
+
 .dropup .dropdown-menu,
+/* 设置向上弹起的下拉菜单 */
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
