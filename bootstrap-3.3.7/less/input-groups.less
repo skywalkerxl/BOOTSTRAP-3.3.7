@@ -1,5 +1,6 @@
 //
 // Input groups
+// 输入框组
 // --------------------------------------------------
 
 // Base styles
@@ -59,7 +60,9 @@
 .input-group-btn,
 .input-group .form-control {
   display: table-cell;
-
+  // 此元素会作为一个表格单元格显示（类似于<td>和<th>）
+  // 张鑫旭有一篇博客里说到了这个应用( http://www.zhangxinxu.com/wordpress/2010/10/%E6%88%91%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84%E5%87%A0%E7%A7%8Ddisplaytable-cell%E7%9A%84%E5%BA%94%E7%94%A8/ )
+  // 在这里用于设置等高布局
   &:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
@@ -105,6 +108,9 @@
 }
 
 // Reset rounded corners
+// 圆角设置,
+
+// 设置右边圆角为 0
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
